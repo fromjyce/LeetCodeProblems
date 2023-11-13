@@ -12,14 +12,16 @@ def mySqrt(x: int) -> int:
 
 print(mySqrt(8))
 
+#Another Way of doing it
+
 def squareRoot(n):
     x=n
-    y=1.000000 #iteration initialisation.
-    e=0.000001 #accuracy after decimal place.
+    y=1.000000
+    e=0.000001 
     while x-y > e:
         x=(x+y)/2
         y=n/x
-    print(x)
+    return math.floor(x)
 
 
-squareRoot(4)
+print(squareRoot(4))
